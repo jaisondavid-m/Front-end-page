@@ -45,8 +45,8 @@ function Main() {
       <div className='flex flex-col md:flex-row lg:flex-row md:p-10 md:text-center lg:m-10 mt-10 lg:mt-20 lg:mx-20'>
         <div>
           <div className="relative group inline-block overflow-hidden rounded-xl ">
-            <img src={dreamimg} className="lg:h-96 h-60 w-auto border-2 fade-up border-black rounded-xl transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:brightness-75"/>
-            <img src={mobile} className="absolute bottom-0 left-0 w-full h-full object-cover translate-y-full scale-75 opacity-0  transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100"/>
+            <img src={dreamimg} alt="dream" className="lg:h-96 h-60 w-auto border-2 fade-up border-black rounded-xl transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:brightness-75"/>
+            <img src={mobile} alt="mobile" className="absolute bottom-0 left-0 w-full h-full object-cover translate-y-full scale-75 opacity-0  transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100"/>
           </div>
 
 
@@ -77,8 +77,8 @@ function Main() {
             <p>■ Development</p>
           </div>
           <div className="relative group inline-block overflow-hidden rounded-xl">
-              <img src={oldman} className="lg:h-96 h-60 w-auto border-2 fade-up border-black rounded-xl transition-all duration-700 ease-in-out group-hover:scale-105 group-hover:brightness-75"/>
-              <img src={laptop} className="absolute bottom-0 w-full h-full object-cover translate-y-full scale-75 opacity-0 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]  group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100"/>
+              <img src={oldman} alt="old man" className="lg:h-96 h-60 w-auto border-2 fade-up border-black rounded-xl transition-all duration-700 ease-in-out group-hover:scale-105 group-hover:brightness-75"/>
+              <img src={laptop} alt="laptop" className="absolute bottom-0 w-full h-full object-cover translate-y-full scale-75 opacity-0 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]  group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100"/>
           </div>
 
           <div className='flex justify-between md:justify-start md:gap-x-48 '>
@@ -90,7 +90,7 @@ function Main() {
 
      <div className='relative lg:w-max lg:ms-44 '>
           <div className='h-56 md:h-64 md:w-96 lg:h-72 mt-10  lg:mt-80 border-2 border-black rounded-xl overflow-hidden'>
-            <img src={shoe} className='w-screen lg:w-full h-full object-cover transition-transform duration-500 hover:scale-110' />
+            <img src={shoe} alt="shoe" className='w-screen lg:w-full h-full object-cover transition-transform duration-500 hover:scale-110' />
           </div>
          
       <div className='flex justify-between md:justify-start lg:justify-between'>
@@ -99,9 +99,13 @@ function Main() {
       </div>
      </div><hr/>
     <div className="relative w-full h-[50vh] lg:h-screen flex flex-col justify-between bg-white mt-10 lg:mt-40 fade-up">
-      <img className="absolute w-full h-96 lg:h-full object-cover opacity-60" src="/cloud.avif"/>
+      <img
+        className="absolute w-full h-96 lg:h-full object-cover opacity-60"
+        src={`${process.env.PUBLIC_URL}/cloud.avif`}
+        alt="cloud background"
+      />
         <div className="absolute flex items-center justify-center w-full">
-        <img className="lg:h-[1000px] h-[500px] pt-20" src="/boy.webp"/>
+        <img className="lg:h-[1000px] h-[500px] pt-20" src={`${process.env.PUBLIC_URL}/boy.webp`} alt="hero"/>
         </div>
         <div><p className='aboslute flex items-center justify-between lg:w-[90%] mx-1 lg:mx-auto inset-0 text-xl font-bold lg:text-7xl z-50'><p>Dream.</p><p> Make.</p><p> Change™️</p></p></div>
         </div>
