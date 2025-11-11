@@ -9,7 +9,7 @@ function Services() {
       </h1>
 
       <div className="relative w-full h-screen mt-24">
-        <img src="/twoguys.webp" alt="Two Guys" className="absolute w-full h-full object-cover object-center lg:object-right"/>
+        <img src={`${process.env.PUBLIC_URL}/twoguys.webp`} alt="Two Guys" className="absolute w-full h-full object-cover object-center lg:object-right"/>
        <div className="absolute inset-0 bg-black/40 flex flex-col lg:flex-row justify-center lg:justify-end items-center text-center lg:text-left">
         <div className="w-[90%] sm:w-[80%] md:w-[60%] lg:w-[45%] h-[80%] overflow-y-auto p-6 lg:p-8 backdrop-blur-sm scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-transparent">
           <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-red-700 leading-relaxed space-y-8 lg:space-y-10">
