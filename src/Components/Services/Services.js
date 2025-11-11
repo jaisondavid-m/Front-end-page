@@ -18,7 +18,7 @@ function Services() {
             <p>Samet + Hassam — Co-founders of Future Three</p>
             <p>Behind The Threes — Discover the untold stories that fuel our creative process.</p>
             <p>Follow us on YouTube for insights and storytelling that inspire change.</p>
-          <div className="text-center mt-10 text-white shadow-lg shadow-black p-5 rounded-xl bg-black/30">
+          <div className="text-center mt-10 text-white shadow-lgshadow-black hover:scale-105 transition-all p-5 rounded-xl bg-black/30">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold">Samet + Hassam</h1>
           <p className="text-sm sm:text-base">Co-founders of Future Three</p>
           <button className="mt-4 flex items-center justify-center gap-2 mx-auto text-sm sm:text-lg border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition">

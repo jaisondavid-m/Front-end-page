@@ -38,7 +38,7 @@ function Main() {
     <div ref={containerRef} className="bg-gray-100 bg-cover bg-center p-5 lg:p-10 " >
       <div className='flex flex-col lg:flex-row  justify-between mb-10'>
         <div className="text-center"><DigitalClock/></div>
-        <div className='text-xl lg:text-4xl tracking-tight lg:w-[50%] fade-up '><span className='text-red-700 font-bold'>FUTURE THREE®</span> is based in Wiesbaden and supported by an international network. It creates brands and digital experiences where flawless functionality meets editorial aesthetics.<br /><div className='text-black border-2 flex w-max lg:mx-0 mx-auto p-1 px-2 mt-5 font-bold text-sm gap-2 items-center'><span style={{ "font-family": "Helvetica Neue ; " }} >About Us</span><span><CiLocationArrow1 /></span></div>
+        <div className='text-xl lg:text-4xl tracking-tight lg:w-[50%] fade-up '><span className='text-red-700 font-bold'>FUTURE THREE®</span> is based in Wiesbaden and supported by an international network. It creates brands and digital experiences where flawless functionality meets editorial aesthetics.<br /><div className='text-black border-2 flex w-max lg:mx-0 mx-auto p-1 px-2 mt-5 font-bold text-sm gap-2 items-center hover:shadow-md hover:shadow-black transition-all'><span style={{ "font-family": "Helvetica Neue ; " }} >About Us</span><span><CiLocationArrow1 /></span></div>
         </div>
 
       </div><hr />
@@ -69,7 +69,7 @@ function Main() {
           </div>
         </div>
       </div>
-      <div>
+      <div className='md:w-max'>
         <div className='lg:absolute lg:right-10'>
           <div className='flex justify-between md:justify-start md:gap-x-5 lg:px-4 py-2 pt-10 lg:pt-0 text-center lg:font-bold'>
             <p>■ Branding</p>
@@ -77,7 +77,7 @@ function Main() {
             <p>■ Development</p>
           </div>
           <div className="relative group inline-block overflow-hidden rounded-xl">
-              <img src={oldman} alt="old man" className="lg:h-96 h-60 w-auto border-2 fade-up border-black rounded-xl transition-all duration-700 ease-in-out group-hover:scale-105 group-hover:brightness-75"/>
+              <img src={oldman} alt="old man" className=" lg:h-96 h-60 md:w-max w-auto border-2 fade-up border-black rounded-xl transition-all duration-700 ease-in-out group-hover:scale-105 group-hover:brightness-75"/>
               <img src={laptop} alt="laptop" className="absolute bottom-0 w-full h-full object-cover translate-y-full scale-75 opacity-0 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]  group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100"/>
           </div>
 
@@ -86,16 +86,16 @@ function Main() {
             <div className='flex items-center'><p className='font-bold text-2xl lg:text-5xl'>RODEWALD</p><MdArrowOutward /></div>
           </div>
         </div>
+        
       </div>
-
-     <div className='relative lg:w-max lg:ms-44 '>
-          <div className='h-56 md:h-64 md:w-96 lg:h-72 mt-10  lg:mt-80 border-2 border-black rounded-xl overflow-hidden'>
-            <img src={shoe} alt="shoe" className='w-screen lg:w-full h-full object-cover transition-transform duration-500 hover:scale-110' />
+     <div className='md:w-[60%] relative  lg:w-max lg:ms-44 md:mx-auto'>
+          <div className=' h-56 md:h-64  lg:h-72 mt-10  lg:mt-80 border-2 border-black rounded-xl overflow-hidden'>
+            <img src={shoe} alt="shoe" className=' w-screen lg:w-full h-full object-cover transition-transform duration-500 hover:scale-110' />
           </div>
          
-      <div className='flex justify-between md:justify-start lg:justify-between'>
-            <p className='text-xl font-bold'>03</p>
-            <div className='flex items-center md:ml-64'><p className='font-bold text-2xl lg:text-5xl '>EGEON</p><MdArrowOutward/></div>
+          <div className='flex justify-between md:justify-start lg:justify-between'>
+                <p className='text-xl font-bold'>03</p>
+            <div className='flex items-center justify-between md:ml-72 '><p className='md:text-4xl font-bold text-2xl lg:text-5xl '>EGEON</p><MdArrowOutward/></div>
       </div>
      </div><hr/>
     <div className="relative w-full h-[50vh] lg:h-screen flex flex-col justify-between bg-white mt-10 lg:mt-40 fade-up">
@@ -104,7 +104,7 @@ function Main() {
         src={`${process.env.PUBLIC_URL}/cloud.avif`}
         alt="cloud background"
       />
-        <div className="absolute flex items-center justify-center w-full">
+        <div className="absolute hover:scale-105 transition-all flex items-center justify-center w-full">
         <img className="lg:h-[1000px] h-[500px] pt-20" src={`${process.env.PUBLIC_URL}/boy.webp`} alt="hero"/>
         </div>
         <div><p className='aboslute flex items-center justify-between lg:w-[90%] mx-1 lg:mx-auto inset-0 text-xl font-bold lg:text-7xl z-50'><p>Dream.</p><p> Make.</p><p> Change™️</p></p></div>
